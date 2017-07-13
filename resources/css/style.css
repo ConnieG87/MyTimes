@@ -4,36 +4,50 @@ body {
 
 header {
   display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width:100%;
+  height: 80px;
+  border-bottom: 1px solid black;
+  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  justify-content: space-between;
-  border-bottom: 1px solid black;
-  align-items: center;
-  padding: 10px;
+  /*
+
+  justify-content: space-between;       this is done by setting the width to 100% and flex-growth of .logo to 1
+  padding: 10px;                        this is done by setting the height of the header to 80px while the img is 60px and items are center-aligned*/
 }
 
 .logo {
-  display: flex;
-  color: MediumAquamarine;
+  display: flex;                      /* display: flex and align-items: center are necessary here, they are not inherited from header. Not sure why not. Because .logo is more specific?*/
   align-items: center;
-
+  flex-grow: 1;
+  padding-left: 30px;
+  border: 1px solid red;
 }
 
-.logo p {
-  margin-left: 10px;
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-right: 12px;
 }
 
-nav {
-  display: flex;
+.logo span {
+  color: MediumAquamarine;
+}
+
+header nav {
+  padding-right: 40px;
+  border: 1px solid red;
 }
 
 nav span {
   display: inline-block;
-  margin: 10px;
-
+  padding: 20px 10px;
 }
 
-nav a {
+a {
   color: black;
 }
