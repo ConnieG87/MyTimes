@@ -48,10 +48,14 @@ a {
 
 .content {
   display: flex;
-  position: relative;
-  top: 80px;
-  margin: 0px auto;
   width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+
+  /*position: relative;  //this did this with padding-top instead
+  top: 80px;*/
+
+
   border: 1px solid black;
 }
 
@@ -63,8 +67,8 @@ a {
 .column {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  margin-right: 40px;
+  /*margin-top: 40px;   //this is included in the padding-top of the .content */
+  margin-right: 32px;
 }
 
 .column.large {
