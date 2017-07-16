@@ -114,7 +114,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 300px;
-  /*justify-content: space-between;   They set the height of the text-content to align the images. Maybe my solution is better?*/
 }
 
 .stories .text-content {
