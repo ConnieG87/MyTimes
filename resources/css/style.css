@@ -76,23 +76,28 @@ a {
   width: 240px;
 }
 
-.narrative {
+body {  /*they haven't done this yet in the example at this stage.*/
   font-family: Georgia;
   font-size: 17px;
   color: black;
 }
 
 .image-content {
-  display: flex;
+  /*display: flex;  This is not used. Because it inherits its flex properties?*/
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
+  text-align: center;
   height: 300px;
+  margin-top: 15px;
 }
 
 .lead-story .image-content {
   background-image: url("../images/img-story-main.png");
+  width: 630px;  /* I'm not sure why this is necessary as the column width is also 630. */
+  margin-top: 0;
+  text-align: left;
   font-size: 40px;
 }
 
