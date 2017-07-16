@@ -1,5 +1,8 @@
 body {
   margin: 0px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
 header {
@@ -76,14 +79,7 @@ a {
   width: 240px;
 }
 
-body {  /*they haven't done this yet in the example at this stage.*/
-  font-family: Georgia;
-  font-size: 17px;
-  color: black;
-}
-
 .image-content {
-  /*display: flex;  This is not used. Because it inherits its flex properties?*/
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
@@ -95,7 +91,7 @@ body {  /*they haven't done this yet in the example at this stage.*/
 
 .lead-story .image-content {
   background-image: url("../images/img-story-main.png");
-  width: 630px;  /* I'm not sure why this is necessary as the column width is also 630. */
+  width: 630px;
   margin-top: 0;
   text-align: left;
   font-size: 40px;
