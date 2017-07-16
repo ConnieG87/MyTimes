@@ -126,14 +126,9 @@ a {
   text-align: center;
   margin-bottom: 41px;
 }
-/*
-.news-bites {       this is not necessary as this is the property of the third column
-  display: flex;
-  flex-direction: column;
-}*/
 
 .news-bites .bite {
-  display: block;       /*Without this they overlap. I had solved this by setting the news-bites to flex and column.*/
+  display: block;
   background-color: WhiteSmoke;
   font-family: Verdana;
   font-size: 12px;
